@@ -1,0 +1,44 @@
+.text-frame {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.72), rgba(239, 236, 226, 0.5));
+}
+
+.text-workspace {
+  min-height: 0;
+  display: grid;
+}
+
+.primary-panel {
+  min-height: 0;
+  padding: clamp(0.85rem, 2vw, 1.15rem);
+}
+
+.workspace-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.workspace-titlebar h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: 0;
+}
+
+.workspace-titlebar span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 680;
+}
+
+.empty-state {
+  min-height: 22rem;
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+@media (max-width: 860px) {
+  .empty-state {
+    min-height: 18rem;
+  }
+}
